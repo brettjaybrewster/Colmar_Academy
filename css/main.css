@@ -12,6 +12,7 @@
 /*COLOR SCHEME*/
 .color-1 {
   background-color: hsla(225, 20%, 95%, 0.8);
+  color: hsla(360, 0%, 0%, 1.0);
 }
 
 /*HEADER*/
@@ -27,24 +28,14 @@ header .header-left {
   align-items: center;
 }
 header img {
-  display: inline-block;
-  float: left;
   padding-left: 24px;
 }
 header h1 {
   display: inline-block;
-  float: left;
   text-transform: uppercase;
 }
 header h1 .header-span {
   font-weight: 900;
-}
-header nav {
-  float: right;
-  display: inline-block;
-}
-header nav ul {
-  display: inline-block;
 }
 header nav ul li {
   display: inline-block;
