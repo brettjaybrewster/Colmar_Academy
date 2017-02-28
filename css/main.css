@@ -1,3 +1,53 @@
-html {
-  background-color: blue;
+/** {
+  border: 2px solid red;
+  margin: 0;
+  padding: 0
+}
+*:nth-child(1) {
+  border: 2px solid orange;
+}
+*:nth-child(2) {
+  border: 2px solid yellow;
+}*/
+/*COLOR SCHEME*/
+.color-1 {
+  background-color: hsla(225, 20%, 95%, 0.8);
+}
+
+/*HEADER*/
+header {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  width: 100%;
+}
+header .header-left {
+  display: inline-flex;
+  align-items: center;
+}
+header img {
+  display: inline-block;
+  float: left;
+  padding-left: 24px;
+}
+header h1 {
+  display: inline-block;
+  float: left;
+  text-transform: uppercase;
+}
+header h1 .header-span {
+  font-weight: 900;
+}
+header nav {
+  float: right;
+  display: inline-block;
+}
+header nav ul {
+  display: inline-block;
+}
+header nav ul li {
+  display: inline-block;
+  text-decoration: none;
+  margin-right: 16px;
 }
