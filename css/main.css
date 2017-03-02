@@ -16,16 +16,16 @@ html {
 
 /*COLOR SCHEME*/
 .color-1 {
-  background-color: hsla(225, 20%, 95%, 0.8);
+  background-color: hsla(225, 20%, 100%, 0.8);
   color: hsla(360, 0%, 0%, 1.0);
 }
 .color-2 {
-  background-color: hsla(225, 60%, 60%, 0.8);
+  background-color: hsla(225, 20%, 90%, 0.8);
   color: hsla(360, 0%, 0%, 1.0);
 }
 .color-3 {
-  background-color: hsla(360, 60%, 60%, 0.8);
-  color: hsla(360, 0%, 0%, 1.0);
+  background-color: hsla(360, 60%, 0%, 0.8);
+  color: hsla(360, 0%, 100%, 1.0);
 }
 
 /*HEADER*/
@@ -67,7 +67,7 @@ header nav ul li {
   justify-content: flex-start;
   display: inline-flex;
   width: 100%;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 .left {
   width: 70%;
@@ -107,10 +107,10 @@ header nav ul li {
   display: inline-flex;
   align-items: flex-start;
   width: 100%;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
 }
 .main-content .second-section .left {
-  border: 1px solid grey;
+  border-right: 1px solid grey;
 }
 .main-content .second-section .image-container {
   display: inline-block;
@@ -131,7 +131,8 @@ header nav ul li {
 .main-content .second-section .newsfeed-block {
   display: inline-flex;
   flex-wrap: nowrap;
-  border: 1px solid grey;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
 }
 .main-content .second-section .newsfeed-block .image-container {
   width: 35%;
@@ -154,4 +155,125 @@ header nav ul li {
 }
 .main-content .second-section .newsfeed-block .text-container a {
   padding: 0 .5rem .5rem .5rem;
+}
+
+/*COURSES*/
+.courses {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+.courses .text-container {
+  width: 100%;
+  text-align: center;
+  padding: 32px 0;
+}
+.courses .text-container h3 {
+  font-size: 2rem;
+  font-weight: 900;
+}
+.courses .gallery {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 32px;
+}
+.courses .course-section {
+  display: inline-block;
+  margin: 0 16px 16px 16px;
+  width: 30%;
+}
+.courses .course-section img {
+  width: 100%;
+}
+.courses .course-section h4 {
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding: 16px 0 0 16px;
+}
+.courses .course-section h5 {
+  font-size: .75rem;
+  text-transform: uppercase;
+  padding: 8px 0 0 16px;
+}
+.courses .course-section h6 {
+  font-size: .75rem;
+  padding: 8px 0 24px 16px;
+}
+
+/*THESIS EXHIBIT*/
+.thesis-exhibit {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+.thesis-exhibit .text-container {
+  padding: 32px 0;
+  width: 100%;
+}
+.thesis-exhibit .text-container h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 900;
+}
+.thesis-exhibit .full-width {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.thesis-exhibit video {
+  max-width: 90%;
+  margin: 0 16px 0 24px;
+}
+.thesis-exhibit .left .text-container h2 {
+  padding: 0px 24px 8px 24px;
+  font-size: 1.2rem;
+  font-weight: 900;
+}
+.thesis-exhibit .left .text-container p {
+  padding: 0px 24px 8px 24px;
+}
+.thesis-exhibit .newsfeed-block {
+  display: inline-flex;
+  flex-wrap: nowrap;
+}
+.thesis-exhibit .newsfeed-block .image-container {
+  width: 35%;
+  padding: 16px 0 16px 16px;
+}
+.thesis-exhibit .newsfeed-block .image-container img {
+  width: 100%;
+}
+.thesis-exhibit .newsfeed-block .text-container {
+    display: inline-block;
+    width: 60%;
+}
+.thesis-exhibit .newsfeed-block .text-container h3 {
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 16px .5rem .5rem .5rem;
+}
+.thesis-exhibit .newsfeed-block .text-container p {
+  padding: 0 .5rem .5rem .5rem;
+  font-size: .95rem;
+  line-height: 1.4;
+}
+
+/*FOOTER*/
+footer {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+}
+footer .footer-left {
+  padding: 0 0 0 24px;
+}
+footer .footer-right {
+  padding: 0 1rem 0 0;
+}
+footer .footer-right a {
+  text-decoration: none;
+  color: black;
+  padding: 0 .25rem;
 }
