@@ -2,9 +2,9 @@
 html {
   font-size: 16px;
 }
-a {
+/*a {
   text-decoration: none;
-}
+}*/
 .color-1 {
   background-color: hsla(180, 25%, 80%, 0.8);
   color: hsla(360, 0%, 0%, 1.0);
@@ -95,6 +95,9 @@ header nav ul li {
   margin: 0 auto 2rem auto;
   border-radius: 0.5rem;
   }
+.main-content .first-section a {
+  text-decoration: none;
+}
 .main-content .second-section {
   display: inline-flex;
   align-items: flex-start;
@@ -127,26 +130,28 @@ header nav ul li {
   border-right: 1px solid white;
 }
 .main-content .second-section .newsfeed-block .image-container {
-width: 35%;
-padding: 16px 0 16px 16px;
+  width: 35%;
+  padding: 16px 0 16px 16px;
+
 }
 .main-content .second-section .newsfeed-block .image-container img {
-width: 100%;
+  width: 100%;
+  border-radius: .5rem;
 }
 .main-content .second-section .newsfeed-block .text-container {
-display: inline-block;
-width: 60%;
+  display: inline-block;
+  width: 60%;
 }
 .main-content .second-section .newsfeed-block .text-container h3 {
-font-weight: 900;
-font-size: 1.5rem;
-padding: 16px .5rem .5rem .5rem;
+  font-weight: 900;
+  font-size: 1.5rem;
+  padding: 16px .5rem .5rem .5rem;
 }
 .main-content .second-section .newsfeed-block .text-container p {
-padding: 0 .5rem .5rem .5rem;
+  padding: 0 .5rem .5rem .5rem;
 }
 .main-content .second-section .newsfeed-block .text-container a {
-padding: 0 .5rem .5rem .5rem;
+  padding: 0 .5rem .5rem .5rem;
 }
 
 /*COURSES*/
