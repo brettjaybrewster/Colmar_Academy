@@ -2,6 +2,9 @@
 html {
   font-size: 16px;
 }
+a {
+  text-decoration: none;
+}
 .color-1 {
   background-color: hsla(180, 25%, 80%, 0.8);
   color: hsla(360, 0%, 0%, 1.0);
@@ -41,6 +44,8 @@ header nav ul li {
   display: inline-block;
   text-decoration: none;
   margin-right: 16px;
+  padding: .5rem;
+  border-radius:
 }
 
 /*MAIN CONTENT*/
@@ -244,6 +249,7 @@ padding: 0 .5rem .5rem .5rem;
   font-weight: 900;
   font-size: 1.2rem;
   padding: 16px .5rem .5rem .5rem;
+  text-align: left;
 }
 .thesis-exhibit .newsfeed-block .text-container p {
   padding: 0 .5rem .5rem .5rem;
@@ -270,4 +276,41 @@ footer .footer-right a {
   text-decoration: none;
   color: black;
   padding: 0 .25rem;
+}
+
+/*INTERACTIVE FEATURES*/
+.main-content .first-section:hover,
+.main-content .second-section .left:hover,
+.main-content .second-section .right .newsfeed-block:hover,
+.courses:hover,
+.courses .course-section:hover,
+.thesis-exhibit .text-container:hover,
+.thesis-exhibit .left:hover,
+.thesis-exhibit .newsfeed-block:hover {
+  background-color: hsla(180, 25%, 90%, 0.8);
+}
+.main-content .first-section,
+.main-content .second-section .left,
+.main-content .second-section .right .newsfeed-block,
+.courses,
+.courses .course-section,
+.thesis-exhibit .text-container,
+.thesis-exhibit .left,
+.thesis-exhibit .newsfeed-block {
+  transition: all 300ms linear 100ms;
+}
+
+/*BUTTONS*/
+.button {
+  border: 1px solid hsla(0, 100%, 0%, 0.2);
+  border-radius: .5rem;
+  transition: all 300ms linear 100ms;
+}
+.button:hover {
+  background-color: hsla(360, 60%, 0%, 1.0);
+  color: hsla(360, 0%, 100%, 1.0);
+  border: 1px solid hsla(360, 60%, 0%, 1.0);
+}
+a:visited {
+  color: black;
 }
