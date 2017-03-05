@@ -2,11 +2,8 @@
 html {
   font-size: 16px;
 }
-/*a {
-  text-decoration: none;
-}*/
 .color-1 {
-  background-color: hsla(180, 25%, 80%, 0.8);
+  background-color: hsla(160, 0%, 80%, 0.8);
   color: hsla(360, 0%, 0%, 1.0);
 }
 .color-2 {
@@ -16,6 +13,24 @@ html {
 .color-3 {
   background-color: hsla(360, 60%, 0%, 0.8);
   color: hsla(360, 0%, 100%, 1.0);
+}
+.mobile {
+  display: none;
+}
+@media only screen and (max-width: 650px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  header.regular {
+    display: none;
+  }
+  header.mobile {
+    display: inline-flex;
+    justify-content: space-around;
+    height: 64px;
+  }
 }
 
 /*HEADER*/
@@ -47,6 +62,12 @@ header nav ul li {
   padding: .5rem;
   border-radius:
 }
+@media only screen and (max-width: 650px) {
+  header nav ul li {
+    margin-right: 4px;
+    padding: .25rem;
+  }
+}
 
 /*MAIN CONTENT*/
 .main-content {
@@ -55,9 +76,9 @@ header nav ul li {
   justify-content: center;
 }
 .main-content .first-section {
+  display: inline-flex;
   align-items: center;
   justify-content: flex-start;
-  display: inline-flex;
   width: 100%;
   border-bottom: 1px solid white;
 }
@@ -132,7 +153,6 @@ header nav ul li {
 .main-content .second-section .newsfeed-block .image-container {
   width: 35%;
   padding: 16px 0 16px 16px;
-
 }
 .main-content .second-section .newsfeed-block .image-container img {
   width: 100%;
@@ -152,6 +172,115 @@ header nav ul li {
 }
 .main-content .second-section .newsfeed-block .text-container a {
   padding: 0 .5rem .5rem .5rem;
+}
+@media only screen and (max-width: 980px) {
+  .main-content .first-section .text-container h2, .second-section .text-container h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  .main-content .first-section .text-container p, .second-section .text-container p {
+    padding-bottom: 1rem;
+  }
+  .main-content .second-section .newsfeed-block .text-container h3 {
+    font-size: 1.2rem;
+    padding-bottom: .25rem;
+  }
+  .main-content .second-section .newsfeed-block .text-container p {
+    font-size: .85rem;
+  }
+  .main-content .second-section .left {
+    height: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .left {
+    width: 60%;
+  }
+  .right {
+    width: 40%;
+  }
+  .main-content .first-section .text-container .start-button {
+    font-size: 1.5rem;
+    padding: 4px;
+    margin: 0 auto .5rem auto;
+  }
+  .main-content .second-section .newsfeed-block .text-container p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .main-content .first-section {
+    flex-wrap: wrap;
+  }
+  .main-content .first-section .left {
+    width: 100%;
+  }
+  .main-content .first-section .left .image-container {
+    padding: 0;
+    height: 220px;
+  }
+  .main-content .first-section .image-container img {
+    height: 100%;
+  }
+  .main-content .right {
+    width: 100%;
+    padding: 1rem;
+  }
+  .main-content .first-section .right .text-container {
+    padding: 0;
+  }
+  .main-content .first-section .text-container h2 {
+    padding-bottom: 1.5rem;
+    font-size: 2.2rem;
+    font-weight: 900;
+    }
+  .main-content .first-section .text-container p {
+    line-height: 1.3;
+    font-size: 1.2rem;
+    padding-bottom: 2rem;
+    text-align: justify;
+    }
+  .main-content .first-section .text-container .start-button {
+    padding: 1rem;
+  }
+  .main-content .second-section {
+    border: 0px solid
+  }
+  .main-content .second-section .left {
+    display: none;
+  }
+  .main-content .second-section .right {
+    padding: 0;
+  }
+  .main-content .second-section .newsfeed-block {
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    padding-bottom: 16px;
+    border: 0px solid white;
+  }
+  .main-content .second-section .newsfeed-block .image-container {
+    width: 100%;
+    padding: 16px;
+  }
+  .main-content .second-section .newsfeed-block .image-container img {
+    width: 100%;
+    height: 180px;
+    border-radius: 0;
+  }
+  .main-content .second-section .newsfeed-block .text-container h3 {
+    padding: 0 0 8px 32px;
+  }
+  .main-content .second-section .newsfeed-block .text-container p {
+    display: block;
+    padding: 0 0 8px 32px;
+  }
+  .main-content .second-section .newsfeed-block .text-container a {
+    padding: 0 0 0 32px;
+    margin-bottom: 16px;
+    text-decoration: none;
+    color: blue;
+  }
 }
 
 /*COURSES*/
@@ -198,16 +327,57 @@ header nav ul li {
   font-size: .75rem;
   padding: 8px 0 24px 16px;
 }
+@media only screen and (max-width: 980px) {
+  .courses .course-section {
+    margin: 0 8px 8px 8px;
+    width: 27%;
+  }
+  .courses .course-section h4 {
+    font-size: 1.3rem;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .courses .course-section h4 {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .courses .course-section h6 {
+    padding: 8px 4px 24px 16px;
+  }
+  .courses .course-section:first-child h4 {
+    line-height: 1em;
+  }
+  .courses .course-section h4 {
+    line-height: 2em;
+    padding-top: 8px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .courses .course-section img, .courses .course-section h5, .courses .course-section h6 {
+    display: none;
+  }
+  .courses .course-section {
+    width: 90%;
+  }
+  .courses .course-section h4 {
+    font-size: 1.5rem;
+    line-height: 1em;
+    padding: 16px;
+  }
+}
 
 /*THESIS EXHIBIT*/
 .thesis-exhibit {
   display: inline-flex;
   flex-wrap: wrap;
 }
+.thesis-exhibit .text-container:first-child {
+  border-bottom: 1px solid white;
+}
 .thesis-exhibit .text-container {
   padding: 32px 0;
   width: 100%;
-  border-bottom: 1px solid white;
 }
 .thesis-exhibit .text-container h3 {
   text-align: center;
@@ -249,17 +419,58 @@ header nav ul li {
 .thesis-exhibit .newsfeed-block .text-container {
     display: inline-block;
     width: 60%;
+    padding: 0;
 }
 .thesis-exhibit .newsfeed-block .text-container h3 {
   font-weight: 900;
   font-size: 1.2rem;
-  padding: 16px .5rem .5rem .5rem;
+  padding: 1rem .5rem .5rem .5rem;
   text-align: left;
 }
 .thesis-exhibit .newsfeed-block .text-container p {
-  padding: 0 .5rem .5rem .5rem;
+  padding: 0 .5rem 0 .5rem;
   font-size: .95rem;
   line-height: 1.4;
+}
+@media only screen and (max-width: 980px) {
+  .thesis-exhibit .newsfeed-block .text-container h3 {
+    font-size: 1rem;
+  }
+  .thesis-exhibit .newsfeed-block .text-container p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 780px) {
+  .thesis-exhibit .newsfeed-block .text-container p {
+    font-size: .85rem;
+  }
+  .thesis-exhibit .left .text-container h2 {
+    font-size: 1rem;
+  }
+  .thesis-exhibit .left .text-container p {
+    font-size: .9rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .thesis-exhibit .left {
+    width: 100%;
+  }
+  .thesis-exhibit .right, .thesis-exhibit .text-container h2, .thesis-exhibit .text-container p {
+    display: none;
+  }
+  .thesis-exhibit .text-container:first-child {
+    border: 0px solid white;
+    padding: 16px;
+  }
+  .thesis-exhibit video {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .thesis-exhibit .text-container {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 /*FOOTER*/
@@ -270,6 +481,7 @@ footer {
   width: 100%;
   height: 48px;
   border-top: 1px solid white;
+  /*margin-bottom: 30px;*/
 }
 footer .footer-left {
   padding: 0 0 0 24px;
@@ -282,27 +494,41 @@ footer .footer-right a {
   color: black;
   padding: 0 .25rem;
 }
+@media only screen and (max-width: 500px) {
+  footer {
+    position: relative;
+    bottom: 3px;
+  }
+  footer .footer-left {
+    width: 100%;
+    text-align: center;
+    font-size: .8rem;
+  }
+  footer .footer-right {
+    display: none;
+  }
+}
 
 /*INTERACTIVE FEATURES*/
 .main-content .first-section:hover,
 .main-content .second-section .left:hover,
 .main-content .second-section .right .newsfeed-block:hover,
-.courses:hover,
+/*.courses:hover,*/
 .courses .course-section:hover,
-.thesis-exhibit .text-container:hover,
+/*.thesis-exhibit .text-container:hover,*/
 .thesis-exhibit .left:hover,
 .thesis-exhibit .newsfeed-block:hover {
-  background-color: hsla(180, 25%, 90%, 0.8);
+  background-color: hsla(190, 20%, 75%, 0.8);
 }
 .main-content .first-section,
 .main-content .second-section .left,
 .main-content .second-section .right .newsfeed-block,
-.courses,
+/*.courses,*/
 .courses .course-section,
-.thesis-exhibit .text-container,
+/*.thesis-exhibit .text-container,*/
 .thesis-exhibit .left,
 .thesis-exhibit .newsfeed-block {
-  transition: all 300ms linear 100ms;
+  transition: all 200ms linear 100ms;
 }
 
 /*BUTTONS*/
